@@ -1,4 +1,4 @@
-//  sidebasr toggle
+//  ============= sidebasr toggle ===============
 
 let sidebarOpen = false;
 let sidebar = document.querySelector("aside");
@@ -92,4 +92,3 @@ var chart = new ApexCharts(document.querySelector("#area-chart"), options);
 chart.render();
 
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-

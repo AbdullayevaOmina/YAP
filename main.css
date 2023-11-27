@@ -22,6 +22,10 @@ body {
   height: 100vh;
 }
 
+.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* ======================= HEADER ======================= */
 header {
   grid-area: header;
@@ -37,8 +41,9 @@ header {
   display: none;
 }
 
-.header-right span:hover, .header-left span:hover{
-	cursor: pointer;
+.header-right span:hover,
+.header-left span:hover {
+  cursor: pointer;
 }
 
 /* ======================= SIDEBAR ======================= */
@@ -81,8 +86,8 @@ aside {
 
 .sidebar-list-item:hover {
   cursor: pointer;
-  background-color: rgba(255, 255.255, 0.2);
-  color: #263043;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* color: #263043; */
 }
 
 .sidebabar-responsive {
@@ -146,27 +151,27 @@ main {
 /* ----------------- charts ----------------- */
 
 .charts {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-	/* margin: 25px; */
-	margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* margin: 25px; */
+  margin-top: 60px;
 }
 
 .charts-card {
-	background-color: white;
-	margin-bottom: 20px;
-	padding: 25px;
-	box-sizing: border-box;
-	-webkit-column-break-inside: avoid;
-	border-radius: 5px;
-	box-shadow: 0 6px 7px -4px rgba(0,0,0,02);
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 02);
 }
 
 .chart-title {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ======================= MEDIA QUERY ======================= */
@@ -176,8 +181,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
-      'header'
-      'main';
+      "header"
+      "main";
   }
 
   aside {
@@ -188,14 +193,13 @@ main {
     display: inline;
   }
 
-  .sidebar-title > span {
+  .sidebar-title span {
     display: inline;
   }
 }
 
-
 /* :::::::::::::::::::::::::::::::::::::: 768px */
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
   .main-cards {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -209,7 +213,7 @@ main {
 }
 
 /* :::::::::::::::::::::::::::::::::::::: 576px */
-@media screen and (max-width: 576px) {
+@media(max-width: 576px) {
   .hedaer-left {
     display: none;
   }
